@@ -4,11 +4,11 @@ source "https://rubygems.org"
 
 gem "sinatra"
 gem "haml"
-gem "sass"
 gem "shack"
 gem "unicorn"
 
 group :development, :test do
-  gem "shotgun"
-  gem "puma"
+  gem "minitest", "~> 5.5.0"
+  gem "rack-test", "~> 0.6.2"
+  gem "travis"
 end

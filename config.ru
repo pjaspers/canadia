@@ -5,5 +5,5 @@ Shack::Middleware.configure do |shack|
   shack.sha = "e8e4c4bf"
 end
 use Shack::Middleware
-require "./kkez"
+require "./canadia"
 run Sinatra::Application

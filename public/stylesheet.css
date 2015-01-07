@@ -13,9 +13,9 @@ body,p,h1 {
 
 body {
     color: #fff;
-    font: 10vmax 'Vollkorn', Georgia, "Times New Roman", Times, serif;
+    font: 8vmax 'Vollkorn', Georgia, "Times New Roman", Times, serif;
     font-weight: 700;
-    margin-top: 150px;
+    margin-top: 20px;
     text-align: center;
 }
 

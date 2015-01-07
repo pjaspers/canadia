@@ -21,9 +21,16 @@ body {
 
 h1 {
     font-weight: normal;
+    font-size: 3vmax;
+    color: white;
+}
+
+h2 {
+    font-weight: normal;
     font-size: 26px;
     color: #666;
 }
+
 p.subtitle {
     font: 18px Helvetica,Arial, Verdana, sans-serif;
     color: #333;

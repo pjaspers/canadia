@@ -5,3 +5,6 @@ deploy:
   provider: heroku
   api_key:
     secure: Bm9Wx/Ngd0DyZQcJgkAn2CGdW556u3sEC+dydESOwQYz3qYW8Q4ag56VP+bueC/rBsfK8PUUhwauNCwg023xSNUOr8QYiXlK6WYvQlF81R9fXldMBGkEPlYY4w2UuVQJ9X8CQyecBfEcepQTB3c1kik85JtIuwoE65b74tn5QVA=
+  after_deploy:
+    - echo "Setting the sha"
+    - heroku config:set SHA=$(git rev-parse HEAD)

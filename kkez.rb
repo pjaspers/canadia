@@ -53,5 +53,6 @@ __END__
   = yield
 
 @@ index
-%h1= @title
+%h1= "What's the weather like in Canadia?"
+%h2= @title
 %p= @content

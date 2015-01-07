@@ -2,9 +2,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     haml (3.0.25)
+    kgio (2.9.2)
     puma (2.9.1)
       rack (>= 1.1, < 2.0)
     rack (1.2.2)
+    raindrops (0.13.0)
     sass (3.1.0.alpha.252)
     shack (0.0.1)
     shotgun (0.9)
@@ -13,6 +15,10 @@ GEM
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
     tilt (1.2.2)
+    unicorn (4.8.3)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
@@ -24,3 +30,4 @@ DEPENDENCIES
   shack
   shotgun
   sinatra
+  unicorn

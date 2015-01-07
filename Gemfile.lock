@@ -41,6 +41,7 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     raindrops (0.13.0)
+    rake (10.4.2)
     shack (0.0.1)
     sinatra (1.2.1)
       rack (~> 1.1)
@@ -73,6 +74,7 @@ DEPENDENCIES
   haml
   minitest (~> 5.5.0)
   rack-test (~> 0.6.2)
+  rake (~> 10.4.2)
   shack
   sinatra
   travis

@@ -10,4 +10,4 @@ deploy:
   app: canadiaweather
 after_deploy:
   - echo "Setting the sha"
-  - heroku config:set SHA=$(git rev-parse HEAD)
+  - heroku config:set SHA=$TRAVIS_COMMIT

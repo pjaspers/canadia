@@ -56,3 +56,16 @@ __END__
 %h2= @title
 %p= @content
 %h2= "You should probably wear long johns."
+
+:javascript
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '54af0aa9e32bb40ae6051a58');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();

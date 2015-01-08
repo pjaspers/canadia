@@ -19,7 +19,18 @@ def random_sentence
    "Fargo was filmed in summertime.",
    "a yeti won't go there.",
    "they laughed at Superman's icecastle.",
-   "when you flush the toilet, it sounds like an icecube maker."].sample
+   "when you flush the toilet, it sounds like an icecube maker.",
+   "people come from the hospitality, but stay because they're frozen.",
+   "Thomas Lipton got the idea for icetea while drinking tea in Canadia.",
+   "the Snickers ice bar is just called Snickers.",
+   "every coffee is an iced coffee.",
+   "Kelvin was invented to give Canadia temperatures above 0.",
+   "'The Day After Tomorrow' was filmed there on a hot summer afternoon.",
+   "a fire once froze over.",
+   "it's not that cold, you hoser!",
+   "they add 'eh' add the end of each sentence to stop their lips from freezing.",
+   "a duck does have an echo."
+  ].sample
 end
 
 get "/" do

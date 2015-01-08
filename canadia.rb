@@ -44,3 +44,4 @@ __END__
 %h1= "What's the weather like in Canadia?"
 %h2= @title
 %p= @content
+%h2= "You should probably wear long johns."

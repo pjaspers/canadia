@@ -20,7 +20,7 @@ def random_sentence
    "a yeti won't go there.",
    "they laughed at Superman's icecastle.",
    "when you flush the toilet, it sounds like an icecube maker.",
-   "people come from the hospitality, but stay because they're frozen.",
+   "people come for the hospitality, but stay because they're frozen.",
    "Thomas Lipton got the idea for icetea while drinking tea in Canadia.",
    "the Snickers ice bar is just called Snickers.",
    "every coffee is an iced coffee.",

@@ -3,7 +3,6 @@ require "sinatra"
 require "haml"
 
 # Remaining slugs:
-# mclachlan
 # morissette
 # north
 # page
@@ -20,7 +19,7 @@ def all_content
    {id: "anderson", k: "text", c: "Sean Bean will never visit it."},
    {id: "dallaire", k: "text", c: "pinguins moved away."},
    {id: "twain", k: "text", c: "every drink is on the rocks."},
-   {id: "furtado", k: "text", c: "they call icehockey, hockey."},
+   {id: "mclachlan", k: "text", c: "they call icehockey, hockey."},
    {id: "warren", k: "text", c: "they don't call it skiing, they call it walking."},
    {id: "tweed", k: "text", c: "they call icefishing, fishing."},
    {id: "reeves", k: "text", c: "every bear in canada is an icebear."},

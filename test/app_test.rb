@@ -15,6 +15,7 @@ end
 describe "oh canadia" do
   it "declares its cold in Canada" do
     get "/"
+    follow_redirect!
     last_response.body.must_include "It's so cold,"
   end
 end

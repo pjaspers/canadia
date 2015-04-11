@@ -31,10 +31,24 @@ h2 {
     color: #666;
 }
 
+.illustration {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}
+
 p.subtitle {
     font: 18px Helvetica,Arial, Verdana, sans-serif;
     color: #333;
     margin: 30px 0 15px 0;
+}
+h2.longjohns {
+    margin-top: 30px;
+}
+a.source {
+    margin-top: 10px;
+    float: right;
+    font-size: 12px;
 }
 a {
     color: #333;

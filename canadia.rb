@@ -58,7 +58,7 @@ get "/:slug" do |slug|
   if content = all_content.detect {|d| d[:slug] == slug.downcase}
     @content = content
   else
-    @content = "Not sure what you mean. You hoser! Let's assume cold."
+    @content = {k: "text", c: "Not sure what you mean. You hoser! Let's assume cold." }
   end
   haml :index
 end

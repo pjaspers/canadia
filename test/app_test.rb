@@ -18,4 +18,9 @@ describe "oh canadia" do
     follow_redirect!
     last_response.body.must_include "It's so cold,"
   end
+
+  it "handles slugs it doesn't know" do
+    get "/nilo"
+    last_response.body.must_include "You hoser!"
+  end
 end

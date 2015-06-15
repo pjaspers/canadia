@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gem "sinatra"
 gem "haml"
-gem "shack"
+gem "shack", "~> 0.0.3"
 gem "unicorn"
 gem "rake", "~> 10.4.2"
 

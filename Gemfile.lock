@@ -42,7 +42,7 @@ GEM
       rack (>= 1.0)
     raindrops (0.13.0)
     rake (10.4.2)
-    shack (0.0.2)
+    shack (0.0.3)
     sinatra (1.2.1)
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
@@ -75,7 +75,7 @@ DEPENDENCIES
   minitest (~> 5.5.0)
   rack-test (~> 0.6.2)
   rake (~> 10.4.2)
-  shack
+  shack (~> 0.0.3)
   sinatra
   travis
   unicorn

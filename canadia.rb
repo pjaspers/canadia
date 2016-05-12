@@ -3,7 +3,6 @@ require "sinatra"
 require "haml"
 
 # Remaining slugs:
-# morissette
 # north
 # page
 # polley
@@ -44,7 +43,8 @@ def all_content
    {slug: "dobrev", k: "text", c: "a duck does have an echo."},
    {slug: "furtado", k: "video", c: "https://mtc.cdn.vine.co/r/videos/ECE477F7011143396093686628352_3facab04e7c.0.1.17958842360645696189.mp4?versionId=Zqk9zvRupx7fYRK3i8rxn7mzi0YTnR9c"},
    {slug: "henstridge", k: "video", c: "https://pile.pjaspers.com/CArAgYWW8AEmCQP.mp4"},
-   {slug: "lavigne", k: "image", c: "http://static.boredpanda.com/blog/wp-content/uploads/2015/03/icy-hair-freezing-contest-takhini-hot-springs-16.jpg", s: "http://www.boredpanda.com/icy-hair-freezing-contest-takhini-hot-springs/"}
+   {slug: "lavigne", k: "image", c: "http://static.boredpanda.com/blog/wp-content/uploads/2015/03/icy-hair-freezing-contest-takhini-hot-springs-16.jpg", s: "http://www.boredpanda.com/icy-hair-freezing-contest-takhini-hot-springs/"},
+   {slug: "morissette", k: "text", c: "Canadia is what lies beyond The Wall"}
   ].freeze
 end
 

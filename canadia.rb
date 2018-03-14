@@ -79,13 +79,13 @@ __END__
 %h1= "What's the weather like in Canadia?"
 %h2= @title
 
-%div.illustration
-  - if @content[:k] == "text"
-    %p= @content[:c]
-  - elsif @content[:k] == "image"
-    %p
-      %img{src: @content[:c], style: "max-width:100%;height:auto;"}
-  - elsif @content[:k] == "video"
+- if @content[:k] == "text"
+  %p= @content[:c]
+- elsif @content[:k] == "image"
+  %div.illustration
+    %img{src: @content[:c], style: "max-width:100%;height:auto;"}
+- elsif @content[:k] == "video"
+  %div.illustration
     %video{controls: "controls"}
       %source{src: @content[:c], type: "video/mp4"}
 

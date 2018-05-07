@@ -10,4 +10,4 @@ deploy:
   app: canadiaweather
 env:
   global:
-    secure: hqhrpC91wSsyT24BKT2NM+tUaEVC+RX2gV5IjwjqxyAU2iWQfeRXJ8PC8SxSJc50Vjo+paejX0JlEycd415AVFXTl/iY+QUZaFQSuTdCxR+6+ggf5F6ytm7QvkxLE/Ttc5FWGpF2Bxj95aAVryP8LYZJDoTlZlWe0FlzIfwTml4=
+    secure: "IcyQ+BgjT8fjUGMpDdvyRzczbgiJ+TEHj+ggtbuUz5SMYocYh1JmrrJ+kv7gz3jW2VfbJLaw7arADjLTnuNlrErbx6oBbnXxJwNpLc8jGvpYPjz6xUcKM7yc1sjjacioj9oi/NBwmW3iflpxtcqrRV285UzzUMO98vcnadigS3k="

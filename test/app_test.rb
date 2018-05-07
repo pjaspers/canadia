@@ -6,21 +6,21 @@ require "rack/test"
 
 require File.expand_path "../../canadia.rb", __FILE__
 
-include Rack::Test::Methods
+class MyAppTest < Minitest::Test
+  include Rack::Test::Methods
 
-def app
-  Sinatra::Application
-end
-
-describe "oh canadia" do
-  it "declares its cold in Canada" do
-    get "/"
-    follow_redirect!
-    last_response.body.must_include "It's so cold,"
+  def app
+    Sinatra::Application
   end
 
-  it "handles slugs it doesn't know" do
+  def test_it_declares_its_cold_in_canada
+    get "/"
+    follow_redirect!
+    assert_includes last_response.body, "It's so cold,"
+  end
+
+  def test_it_handles_slugs_it_doesn_t_know
     get "/nilo"
-    last_response.body.must_include "You hoser!"
+    assert_includes last_response.body, "You hoser!"
   end
 end

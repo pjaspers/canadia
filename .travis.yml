@@ -1,12 +1,12 @@
 language: ruby
 rvm:
-- 2.2.0
+- 2.4.2
 install:
 - bundle install --local --jobs=3 --retry=3 --deployment
 deploy:
   provider: heroku
   api_key:
-    secure: Bm9Wx/Ngd0DyZQcJgkAn2CGdW556u3sEC+dydESOwQYz3qYW8Q4ag56VP+bueC/rBsfK8PUUhwauNCwg023xSNUOr8QYiXlK6WYvQlF81R9fXldMBGkEPlYY4w2UuVQJ9X8CQyecBfEcepQTB3c1kik85JtIuwoE65b74tn5QVA=
+    secure: FMgS032IVyicl7HAFrsWv7pDmcA+nDMgxGzaovg0uDfk2yjSYcoeSwlnFeMVjdIR3tgibT6/Awg4CkhrjAw5cBKJFHrFG0ND1MeA53sFtpTdEpU5O4Wwdt2YJOO6HJ9NSWR39Cq9++6zcl7kLkc1KcHuPWWtRf/xRhKEfaww5Cc=
   app: canadiaweather
 env:
   global:

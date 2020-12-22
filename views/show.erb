@@ -1,0 +1,37 @@
+<h1>What's the weather like in Canadia?</h1>
+<h2><%= @title %></h2>
+
+<% if @mickey.text_eh? %>
+  <p>
+    <%= @mickey.content %>
+  </p>
+<% elsif @mickey.image_eh? %>
+  <div class="illustration">
+    <img src="<%= @mickey.content %>" style="max-width:100%;height:auto;"/>
+  </div>
+<% elsif @mickey.video_eh? %>
+  <div class="illustration">
+    <video controls="controls">
+      <source src="<%= @mickey.content %>" type="video/mp4"></source>
+    </video>
+  </div>
+  <div class="metadata">
+    <a class="slug" href="<%= @mickey.id %>">
+      <%= "#" %>
+    </a>
+    <% if @mickey.has_source_eh? %>
+      <a class="source" href="<%= @mickey.source %>">
+        <%= "More info" %>
+      </a>
+    <% end %>
+  </div>
+<% end %>
+
+<h2 class="longjohns">
+  You should probably wear long johns.
+</h2>
+<h2 class="seriously">
+  <a href="/">
+    No seriously, how cold is it?
+  </a>
+</h2>

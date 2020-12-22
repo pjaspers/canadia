@@ -10,7 +10,7 @@ class MyAppTest < Minitest::Test
   include Rack::Test::Methods
 
   def app
-    Sinatra::Application
+    OhCanada
   end
 
   def test_it_declares_its_cold_in_canada

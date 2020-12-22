@@ -8,4 +8,4 @@ Shack::Middleware.configure do |shack|
 end
 use Shack::Middleware
 require "./canadia"
-run Sinatra::Application
+map('/')         { run OhCanada }

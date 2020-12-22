@@ -3,7 +3,6 @@ ruby "2.7.2"
 source "https://rubygems.org"
 
 gem "sinatra"
-gem "haml"
 gem "shack", "< 1"
 gem "puma", "< 6"
 gem "rake", "< 14"

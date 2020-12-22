@@ -29,8 +29,9 @@ end
 
 class OhCanada < Sinatra::Base
   get "/" do
-    mickey = mickeys.sample
-    redirect to("/#{mickey.slug}")
+    @title = "It's so cold,"
+    @mickey = mickeys.sample
+    erb :show
   end
 
   get "/:slug" do |slug|

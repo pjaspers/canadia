@@ -16,9 +16,6 @@
     </video>
   </div>
   <div class="metadata">
-    <a class="slug" href="<%= @mickey.id %>">
-      <%= "#" %>
-    </a>
     <% if @mickey.has_source_eh? %>
       <a class="source" href="<%= @mickey.source %>">
         <%= "More info" %>
@@ -27,11 +24,17 @@
   </div>
 <% end %>
 
-<h2 class="longjohns">
-  You should probably wear long johns.
-</h2>
 <h2 class="seriously">
-  <a href="/">
-    No seriously, how cold is it?
-  </a>
+  <ul class="references">
+    <li>
+      <a class="slug" href="<%= @mickey.slug %>">
+        <%= "Permalink" %>
+      </a>
+    </li>
+    <li>
+      <a href="/">
+        No seriously, how cold is it?
+      </a>
+    </li>
+  </ul>
 </h2>

@@ -66,3 +66,21 @@ a:hover {
 a:active {
     color: #fff
 }
+
+.references {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.references > li {
+    margin-left: 1rem;
+}
+
+.references > li > a {
+    color: #838383;
+}
+
+.references > li > a:hover {
+    transition: color 0.3s ease-out;
+    color: white;
+}

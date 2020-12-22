@@ -4,10 +4,10 @@
 - slug: "anderson"
   kind: "text"
   content: "Sean Bean will never visit it."
-- slug: "dallaire"
+- slug: "twain"
   kind: "text"
   content: "pinguins moved away."
-- slug: "twain"
+- slug: "north"
   kind: "text"
   content: "every drink is on the rocks."
 - slug: "mclachlan"
@@ -25,7 +25,7 @@
 - slug: "adams"
   kind: "text"
   content: "they don't have mountain they have icebergs."
-- slug: "anderson"
+- slug: "young"
   kind: "text"
   content: "Angelina Jolie went jogging there and almost lost an eye."
 - slug: "anka"
@@ -94,13 +94,7 @@
   content: "Canadia is what lies beyond The Wall"
 
 # Available slugs:
-# north
 # page
 # polley
-# reeves
 # short
 # tilly
-# twain
-# tweed
-# warren
-# young

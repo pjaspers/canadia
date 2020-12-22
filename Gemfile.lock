@@ -30,7 +30,6 @@ GEM
       concurrent-ruby (~> 1.0)
     json (2.5.1)
     json_pure (2.5.1)
-    kgio (2.11.3)
     launchy (2.4.3)
       addressable (~> 2.3)
     minitest (5.5.1)
@@ -40,7 +39,10 @@ GEM
       ruby2_keywords (~> 0.0.1)
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
+    nio4r (2.5.4)
     public_suffix (4.0.6)
+    puma (5.0.4)
+      nio4r (~> 2.0)
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
@@ -49,7 +51,6 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    raindrops (0.19.1)
     rake (10.4.2)
     ruby2_keywords (0.0.2)
     shack (0.0.4)
@@ -71,9 +72,6 @@ GEM
       pusher-client (~> 0.4)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
-    unicorn (5.7.0)
-      kgio (~> 2.6)
-      raindrops (~> 0.7)
     websocket (1.2.9)
 
 PLATFORMS
@@ -82,12 +80,12 @@ PLATFORMS
 DEPENDENCIES
   haml
   minitest (~> 5.5.0)
+  puma (~> 5.0.4)
   rack-test (~> 0.6.2)
   rake (~> 10.4.2)
   shack (~> 0.0.3)
   sinatra
   travis
-  unicorn
 
 RUBY VERSION
    ruby 2.7.2p137

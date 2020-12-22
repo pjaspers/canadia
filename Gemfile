@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gem "sinatra"
 gem "haml"
 gem "shack", "~> 0.0.3"
-gem "unicorn"
+gem "puma", "~> 5.0.4"
 gem "rake", "~> 10.4.2"
 
 group :development, :test do

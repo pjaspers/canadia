@@ -4,9 +4,10 @@ source "https://rubygems.org"
 
 gem "sinatra"
 gem "haml"
-gem "shack", "~> 0.0.3"
-gem "puma", "~> 5.0.4"
-gem "rake", "~> 10.4.2"
+gem "shack", "< 1"
+gem "puma", "< 6"
+gem "rake", "< 14"
+
 
 group :development, :test do
   gem "minitest", "~> 5.5.0"

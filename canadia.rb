@@ -29,6 +29,8 @@ def mickeys
 end
 
 class OhCanada < Sinatra::Base
+  set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 365]
+
   get "/" do
     @title = "It's so cold,"
     @mickey = mickeys.sample

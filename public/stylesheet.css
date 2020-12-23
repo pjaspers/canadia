@@ -2,8 +2,8 @@
     --such-color: #f0bdbd;
     --color-such: #252520;
     --such-timing: 0.3s;
-    --such-other-font-family: 'LeagueGothic';
-    --such-hero-font-family: 'Blackout-Midnight';
+    --such-other-font-family: 'LeagueGothic', CenturyGothic, AppleGothic, sans-serif;
+    --such-hero-font-family: 'Blackout-Midnight', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 }
 
 @font-face {
@@ -51,6 +51,9 @@ body {
     font-family: var(--such-other-font-family);
     text-transform: uppercase;
     font-size: 4vh;
+    border-bottom: 1px solid var(--color-such);
+    outline: 2px solid black;
+
 }
 .real-human-being {
     width: 100%;

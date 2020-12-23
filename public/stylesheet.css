@@ -40,6 +40,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
+    height: 100%
 }
 
 .real-human-being {
@@ -66,7 +67,6 @@ body {
     font: 8vmax var(--such-hero-font-family);
     color: var(--such-color);
     align-self: center;
-    justify-content: center;
 }
 
 body {
@@ -106,21 +106,6 @@ p.subtitle {
     float: right;
 }
 
-h2.longjohns {
-    margin-top: 30px;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-a:hover {
-    color: #fff
-}
-a:active {
-    color: #fff
-}
-
 .references {
     font-family: var(--such-other-font-family);
     text-transform: uppercase;
@@ -130,21 +115,21 @@ a:active {
     bottom: 0;
     padding: 0;
     margin: 0;
-    font-size: 4vh;
     list-style: none;
     display: flex;
     justify-content: center;
 }
 .references > li {
     flex-grow: 1;
-
 }
 
 .references > li > a {
+    text-decoration: none;
     transition: all var(--such-timing) ease-out;
     padding: 0 1rem;
     background-color: var(--color-such);
     color: var(--such-color);
+    display: block;
 }
 
 .references > li > a:hover {
@@ -158,13 +143,10 @@ a:active {
     text-align: center;
 }
 
-.references > li > a {
-    display: block;
-    width: 100%;
-}
 .bill-werbeniuk {
     display: none;
 }
+
 @media screen and (min-width: 800px) {
     .bill-werbeniuk {
         display: inline;

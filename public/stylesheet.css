@@ -1,22 +1,73 @@
+:root {
+    --such-color: #f0bdbd;
+    --color-such: black;
+    --such-timing: 0.3s;
+    --such-other-font-family: 'LeagueGothic';
+    --such-hero-font-family: 'Blackout-Midnight';
+}
+
+@font-face {
+  font-family: 'LeagueGothic';
+  font-style:  normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("fonts/LeagueGothic-Regular.woff2") format("woff2"),
+       url("fonts/LeagueGothic-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Blackout-Midnight';
+  font-style:  normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("fonts/blackout_midnight-webfont.woff") format("woff");
+}
+
 html {
-    background: url('splat.png') center center no-repeat, url('background.png') top left repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(241, 190, 190, 0.1)),
+                center / contain url('maple.png') no-repeat;
     background-attachment: fixed;
     background-color: #151515;
     color: #fff;
     -webkit-font-smoothing: antialiased;
 }
 
-body,p,h1 {
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
+.real-human-being {
+    background-color: var(--such-color);
+    color: var(--color-such);
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-family: var(--such-other-font-family);
+    text-transform: uppercase;
+    font-size: 4vh;
+}
+.real-human-being {
+    width: 100%;
+    text-align: center;
+}
+.a-hero-eh {
+    text-align: center;
+    font: 8vmax var(--such-hero-font-family);
+    color: var(--such-color);
+    align-self: center;
+    justify-content: center;
+}
+
 body {
     color: #fff;
-    font: 8vmax 'Vollkorn', Georgia, "Times New Roman", Times, serif;
+    font: 8vmax Georgia, "Times New Roman", Times, serif;
     font-weight: 700;
-    margin-top: 20px;
-    text-align: center;
 }
 
 h1 {
@@ -53,9 +104,7 @@ p.subtitle {
 h2.longjohns {
     margin-top: 30px;
 }
-h2.seriously a {
-    color: #DBDBDB;
-}
+
 a {
     color: #333;
     text-decoration: none;
@@ -68,19 +117,43 @@ a:active {
 }
 
 .references {
+    font-family: var(--such-other-font-family);
+    text-transform: uppercase;
+    font-size: 4vh;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
     list-style: none;
     display: flex;
     justify-content: center;
 }
 .references > li {
-    margin-left: 1rem;
+    flex-grow: 1;
+
 }
 
 .references > li > a {
-    color: #838383;
+    transition: all var(--such-timing) ease-out;
+    padding: 0 1rem;
+    background-color: var(--color-such);
+    color: var(--such-color);
 }
 
 .references > li > a:hover {
-    transition: color 0.3s ease-out;
-    color: white;
+    transition: all var(--such-timing) ease-out;
+    color: var(--color-such);
+    background-color: var(--such-color);
+}
+
+.references {
+    width: 100%;
+    text-align: center;
+}
+
+.references > li > a {
+    display: block;
+    width: 100%;
 }

@@ -13,11 +13,6 @@ class MyAppTest < Minitest::Test
     OhCanada
   end
 
-  def test_it_declares_its_cold_in_canada
-    get "/"
-    assert_includes last_response.body, "It's so cold,"
-  end
-
   def test_it_handles_slugs_it_doesn_t_know
     get "/nilo"
     assert_includes last_response.body, "You hoser!"

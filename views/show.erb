@@ -1,8 +1,7 @@
-<h1>What's the weather like in Canadia?</h1>
-<h2><%= @title %></h2>
+<h1 class="real-human-being">What's the weather like in Canadia?</h1>
 
 <% if @mickey.text_eh? %>
-  <p>
+  <p class="a-hero-eh">
     <%= @mickey.content %>
   </p>
 <% elsif @mickey.image_eh? %>
@@ -24,17 +23,15 @@
   </div>
 <% end %>
 
-<h2 class="seriously">
-  <ul class="references">
-    <li>
-      <a class="slug" href="<%= @mickey.slug %>">
-        <%= "Permalink" %>
-      </a>
-    </li>
-    <li>
-      <a href="/">
-        No seriously, how cold is it?
-      </a>
-    </li>
-  </ul>
-</h2>
+<ul class="references">
+  <li>
+    <a class="slug" href="<%= @mickey.slug %>">
+      <%= "Permalink" %>
+    </a>
+  </li>
+  <li>
+    <a href="/">
+      No seriously, how cold is it?
+    </a>
+  </li>
+</ul>

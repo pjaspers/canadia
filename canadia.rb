@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 require "sinatra"
 require "yaml"
+require "shack"
 
 Mickey = Struct.new(:slug, :kind, :content, :source, keyword_init: true)
 class Mickey

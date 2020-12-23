@@ -1,6 +1,5 @@
 require "bundler/setup"
 require "shack"
-use Rack::Static, :urls => ["/public"]
 sha = ENV["SHA"] || "284246e6dc4a7a6b81064afc453d8e8dc0ef4d61"
 Shack::Middleware.configure do |shack|
   shack.sha = sha

@@ -162,3 +162,11 @@ a:active {
     display: block;
     width: 100%;
 }
+.bill-werbeniuk {
+    display: none;
+}
+@media screen and (min-width: 800px) {
+    .bill-werbeniuk {
+        display: inline;
+    }
+}

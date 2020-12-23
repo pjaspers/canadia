@@ -1,0 +1,17 @@
+name: CI Joe
+
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby (uses .ruby-version)
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+
+    # Runs a single command using the runners shell
+    - name: Run a one-line script
+      run: |
+        script/test

@@ -92,9 +92,17 @@
 - slug: "morissette"
   kind: "text"
   content: "Canadia is what lies beyond The Wall"
+- slug: "page"
+  kind: "text"
+  content: "Their politicians have their hands in their own pockets"
+- slug: "polley"
+  kind: "text"
+  content: "Cows don't give milk, they give milkshakes"
+- slug: "short"
+  kind: "text"
+  content: "They only have cold hard cash"
+- slug: "tilly"
+  kind: "text"
+  content: "They drink their coffee on a stick"
 
 # Available slugs:
-# page
-# polley
-# short
-# tilly

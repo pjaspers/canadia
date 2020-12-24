@@ -76,5 +76,30 @@ class OhCanada < Sinatra::Base
     erb :show
   end
 
+  get "/robots.txt" do
+    <<~ROBOTS
+# Just don't be evil, mkay?
+# User-Agent: *
+# Allow: /
+ROBOTS
+  end
+
+  get "/humans.txt" do
+    <<~HUMANS
+Congratulations/condolences! You're my kind of people!
+
+--
+@pjaspers
+HUMANS
+  end
+
+  get "/robots.txt" do
+    <<~ROBOTS
+# Just don't be evil, mkay?
+User-Agent: *
+Allow: /
+ROBOTS
+  end
+
   run! if app_file == $0
 end

@@ -66,24 +66,6 @@ class OhCanada < Sinatra::Base
     erb :show
   end
 
-  get "/:slug" do |slug|
-    @title = "It's so cold,"
-    if (mickey = mickeys.detect {|mickey| mickey.slug == slug.downcase})
-      @mickey = mickey
-    else
-      @mickey = Mickey.new(kind: "text", content: "Not sure what you mean. You hoser! Let's assume cold.")
-    end
-    erb :show
-  end
-
-  get "/robots.txt" do
-    <<~ROBOTS
-# Just don't be evil, mkay?
-# User-Agent: *
-# Allow: /
-ROBOTS
-  end
-
   get "/humans.txt" do
     <<~HUMANS
 Congratulations/condolences! You're my kind of people!
@@ -99,6 +81,16 @@ HUMANS
 User-Agent: *
 Allow: /
 ROBOTS
+  end
+
+  get "/:slug" do |slug|
+    @title = "It's so cold,"
+    if (mickey = mickeys.detect {|mickey| mickey.slug == slug.downcase})
+      @mickey = mickey
+    else
+      @mickey = Mickey.new(kind: "text", content: "Not sure what you mean. You hoser! Let's assume cold.")
+    end
+    erb :show
   end
 
   run! if app_file == $0

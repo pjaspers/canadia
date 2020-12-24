@@ -29,6 +29,7 @@ def mickeys
 end
 
 class OhCanada < Sinatra::Base
+  TITLE = "Canadia Weather Report"
   set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 365]
 
   get "/" do

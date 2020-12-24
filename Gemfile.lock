@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pjaspers/shack
-  revision: 0fb2cc35ad39f636c5a790163606f68e47399449
+  revision: df57568858d65f0a6c273a5725ce54f8d15e5daa
   specs:
     shack (0.0.4)
 

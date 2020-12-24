@@ -23,6 +23,7 @@ class Mickey
 
   def meta_attributes(base_url:)
     attributes = [
+      {name: "description", content: og_description},
       {property: "og:type", content: "website"},
       {property: "og:title", content: OhCanada::TITLE},
       {name: "twitter:card", content: "summary"},

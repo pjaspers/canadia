@@ -3,7 +3,7 @@ ruby "2.7.2"
 source "https://rubygems.org"
 
 gem "sinatra"
-gem "shack", "< 1"
+gem "shack", git: 'https://github.com/pjaspers/shack'
 gem "puma", "< 6"
 gem "rake", "< 14"
 

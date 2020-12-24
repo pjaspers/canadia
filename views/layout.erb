@@ -11,6 +11,9 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f0bdbd">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#252520">
+    <% @mickey.meta_attributes(base_url: request.base_url).each do |attributes| %>
+      <meta <%= attributes %>>
+    <% end %>
   </head>
   <body>
     <%= yield %>

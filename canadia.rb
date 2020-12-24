@@ -20,6 +20,33 @@ class Mickey
   def has_source_eh?
     !!source
   end
+
+  def meta_attributes(base_url:)
+    attributes = [
+      {property: "og:type", content: "website"},
+      {property: "og:title", content: OhCanada::TITLE},
+      {name: "twitter:card", content: "summary"},
+      {name: "twitter:site", content: OhCanada::TITLE},
+      {name: "twitter:creator", content: "@pjaspers"},
+      {property: "og:description", content: og_description}
+    ]
+    if base_url
+      attributes << {property: "og:url", content: base_url}
+      attributes << {property: "og:image", content: [base_url, "images/og_image.png"].join("/")}
+    end
+
+    attributes.map do |data|
+      data.map do |k,v|
+        "#{k}='#{v}'"
+      end.join(" ")
+    end
+  end
+
+  def og_description
+    return content.gsub("'", '"') if text_eh?
+
+    "Really cold"
+  end
 end
 
 def mickeys

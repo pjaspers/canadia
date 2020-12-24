@@ -32,7 +32,7 @@ class Mickey
     ]
     if base_url
       attributes << {property: "og:url", content: base_url}
-      attributes << {property: "og:image", content: [base_url, "images/og_image.png"].join("/")}
+      attributes << {property: "og:image", content: [base_url, "og_image.png"].join("/")}
     end
 
     attributes.map do |data|

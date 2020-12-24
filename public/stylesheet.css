@@ -32,6 +32,7 @@ html {
     background-color: #151515;
     color: #fff;
     -webkit-font-smoothing: antialiased;
+    height: 100%
 }
 
 body {
@@ -40,7 +41,6 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-    height: 100%
 }
 
 .real-human-being {

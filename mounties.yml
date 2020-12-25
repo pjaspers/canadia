@@ -104,5 +104,8 @@
 - slug: "tilly"
   kind: "text"
   content: "They drink their coffee on a stick"
+- slug: "eugene-levy"
+  kind: "text"
+  content: "They have 4 seasons: June, July, August and Winter"
 
 # Available slugs:
